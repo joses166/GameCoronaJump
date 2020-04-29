@@ -10,7 +10,7 @@ public class corona : MonoBehaviour
     public AudioSource som2;
 
     public Text txtVidas;
-    private static int vidas = 5;
+    private static int vidas = 3;
 
     void Start() 
     {
@@ -38,7 +38,7 @@ public class corona : MonoBehaviour
 
     void perder()
     {
-        if (vidas < 1)
+        if (vidas == 0)
         {
             SceneManager.LoadScene("gameover");
         }
